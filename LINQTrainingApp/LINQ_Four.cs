@@ -171,6 +171,7 @@ namespace LINQTrainingApp
                 Console.WriteLine($"Min: {result.MinAge}");
             }
         }
+        //test
     }
 
     public static class ContinentsExtensions
