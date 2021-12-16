@@ -21,10 +21,12 @@ namespace RazorTrainingApp.Controllers
 
         public IActionResult Index()
         {
+            _logger.LogInformation("Moja informacja");
             return View();
+            
         }
 
-        [Authorize(Roles = "Everyoneee")]
+        [Authorize(Roles = "Everyone")]
         public IActionResult Everyone()
         {
             //that works!!!
