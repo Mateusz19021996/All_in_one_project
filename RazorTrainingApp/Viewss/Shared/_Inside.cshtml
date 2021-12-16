@@ -1,0 +1,16 @@
+﻿@if (User.Identity.IsAuthenticated)
+{
+<h1>User is loged in</h1>
+<h1>@User.Identity.Name</h1>
+
+<ul>
+    @foreach (var c in User.Claims)
+    {
+        <li>@c.Type: @c.Value</li>
+    }
+</ul>
+}
+else
+{
+<h1>You are not logg in !!!</h1>
+}
